@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".HistoryActivity">
+
+    <!-- Título de la pantalla -->
+    <TextView
+        android:id="@+id/tvHeaderTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/historial_de_transmisiones"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/verde_principal"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/verde_principal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvHeaderTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Botón Borrar todos los registros -->
+    <Button
+        android:id="@+id/btnDeleteAll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Borrar todos los registros"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/verde_principal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/btnBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Botón Enviar registros -->
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/verde_principal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/btnDeleteAll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Estado de la última subida -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="12dp"
+        android:text="@string/estado_esperando_resultados_del_servicio"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rounded_background_light"
+        app:layout_constraintTop_toBottomOf="@id/btnEnviar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Separador visual -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Etiqueta sobre la lista de registros -->
+    <TextView
+        android:id="@+id/tvListLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Historial de registros"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- LISTVIEW para mostrar los registros históricos -->
+    <ListView
+        android:id="@+id/lvHistory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        app:layout_constraintTop_toBottomOf="@id/tvListLabel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@android:layout/simple_list_item_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

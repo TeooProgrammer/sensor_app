@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="24dp">
+
+    <!-- Título de la app -->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensor App"
+        android:textSize="30sp"
+        android:textColor="@color/verde_principal"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Valor del sensor -->
+    <TextView
+        android:id="@+id/sensorValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LEJOS (5.0)"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Botones -->
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar lectura"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/viewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver registros"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar registros"/>
+
+</LinearLayout>

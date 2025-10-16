@@ -1,0 +1,27 @@
+<resources>
+    <!-- Nombre base de la aplicación -->
+    <string name="app_name">Sensor App</string>
+
+    <!-- UploadDetailsActivity -->
+    <string name="title_upload_details">Detalles de Subida</string>
+    <string name="title_not_available">Título no disponible</string>
+    <string name="label_record_id">ID de Registro:</string>
+    <string name="record_id_format">ID del registro: #%1$d</string>
+    <string name="record_id_unknown">ID Desconocido</string>
+
+    <!-- HistoryActivity -->
+    <string name="historial_de_transmisiones">Historial de transmisiones</string>
+    <string name="estado_esperando_resultados_del_servicio">Esperando resultados del servicio...</string>
+    <string name="detalle_de_registros_borrados">Detalle de registros borrados</string>
+
+    <!-- MainActivity: evitar hardcoded strings -->
+    <string name="registrar">Registrar</string>
+    <string name="ver">Ver</string>
+    <string name="sensor_valor_inicial">0</string>
+    <string name="salir">Salir</string>
+
+    <!-- RegisterActivity: evitar hardcoded strings -->
+    <string name="registrar_sensor">Registrar</string>
+    <string name="valor_inicial_sensor">0</string>
+</resources>
+

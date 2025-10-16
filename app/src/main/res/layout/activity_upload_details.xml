@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UploadDetailsActivity">
+
+    <!-- Título principal -->
+    <TextView
+        android:id="@+id/tvDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"
+        android:layout_marginBottom="16dp"
+        tools:text="Detalle del Registro" />
+
+    <!-- ID del Registro -->
+    <TextView
+        android:id="@+id/tvRecordInfoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID del Registro: #12345"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Valor -->
+    <TextView
+        android:id="@+id/tvRecordInfoValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor: 56.7"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Fecha y Hora -->
+    <TextView
+        android:id="@+id/tvRecordInfoDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha y Hora: 2025-10-12 14:35"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Estado -->
+    <TextView
+        android:id="@+id/tvRecordInfoState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado: Cerca"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:textColor="@color/white"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
